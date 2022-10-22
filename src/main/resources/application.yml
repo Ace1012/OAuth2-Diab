@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  data:
+    mongodb:
+      username: diab
+      password: o4jD3Xfupap4x2mG
+      uri: mongodb+srv://${spring.data.mongodb.username}:${spring.data.mongodb.password}@diab-oauth2.tj0jav7.mongodb.net/${spring.data.mongodb.database}
+      database: Diab-OAuth2
+  datasource:
+    username: postgres
+    password: password
+    url: jdbc:postgresql://localhost:5432/oauth
+    driver-class-name: org.postgresql.Driver
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 81413481267-dhtr02rd99ua19r3t058029mol2tvpjk.apps.googleusercontent.com
+            client-secret: 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
